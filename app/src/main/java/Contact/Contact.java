@@ -25,7 +25,8 @@ import androidx.room.PrimaryKey;
 
         }
 
-        public Contact(String firstName, String lastName, String email, String phoneNumber) {
+        public Contact(String firstName, String lastName, String email, String phoneNumber, long id) {
+            this.id = id;
             this.firstName = firstName;
             this.lastName = lastName;
             this.email = email;
